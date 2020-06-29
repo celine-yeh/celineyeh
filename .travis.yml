@@ -1,0 +1,19 @@
+sudo: required
+dist: trusty
+language: python
+services:
+  - docker
+before_script:
+  - echo "$SETTINGS_FILE" | base64 -d > settings.yml
+script:
+  - make build
+  - make test
+  - make lint
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - make build && make publish
+  on:
+    tags: true
