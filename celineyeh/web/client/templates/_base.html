@@ -2,9 +2,12 @@
 <html>
 <head>
   <title>Celine Yeh</title>
-  {% block head %}{% endblock %}
+  {% block css %}{% endblock %}
 </head>
 <body>
 {% block content %}{% endblock %}
+
+<script type="text/javascript" src="{{ url_for('static', filename='node_modules/jquery/dist/jquery.min.js') }}"></script>
+{% block script %}{% endblock %}
 </body>
 </html>

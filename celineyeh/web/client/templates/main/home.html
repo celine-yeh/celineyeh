@@ -1,8 +1,17 @@
 {% extends "_base.html" %}
-{% block head %}
-<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='home.css') }}">
+
+{% block css %}
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
 {% endblock %}
+
+{% block script %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}
+
 {% block content %}
-<div class='home'>First section</div>
-<div>Second section</div>
+<div class="home">
+  <div class="photo"></div>
+  <h1 class="title">Celine Yeh</h1>
+</div>
 {% endblock %}
