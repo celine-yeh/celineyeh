@@ -3,7 +3,6 @@ html, body {
 }
 
 .home {
-  background-color: #3E5C76;
   height: 100vh;
   width: 100vw;
   background: linear-gradient(-45deg, #ffcad4, #f4acb7, #d8e2dc, #ffe5d9);
@@ -19,7 +18,7 @@ html, body {
   background-size: cover;
   background-position: 30% 50%;
   border-radius: 6em;
-  border: #fff 0.3em solid;
+  border: #f1f1f1 0.3em solid;
   -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
   -moz-box-shadow:0 0 1em rgba(0, 0, 0, 0.2);
   box-shadow:0 0 1em rgba(0, 0, 0, 0.2);
