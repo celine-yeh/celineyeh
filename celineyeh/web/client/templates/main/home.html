@@ -1,7 +1,7 @@
 {% extends "_base.html" %}
 
 {% block css %}
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Fredoka+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
 {% endblock %}
 
@@ -14,5 +14,12 @@
 <div id="home">
   <div class="photo"></div>
   <h1 class="title">Celine Yeh</h1>
+</div>
+<div class="section">
+  <h1>Note</h1>
+  <div class="content">
+    Some word<br>
+    123 中文測試
+  </div>
 </div>
 {% endblock %}
