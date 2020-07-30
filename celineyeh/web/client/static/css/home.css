@@ -35,7 +35,7 @@
 
   margin: 0 auto;
   position: absolute;
-  top: 50%;
+  top: 55vh;
   left: 50%;
   transform: translate(-50%, -100%);
 }
@@ -47,11 +47,10 @@
   mix-blend-mode: screen;
   font-family: 'Fredoka One', cursive;
   color: white;
-  mix-blend-mode: screen;
 
   margin: 0 auto;
   position: absolute;
-  top: 50%;
+  top: 55vh;
   left: 50%;
   transform: translate(-50%, 0%);
 }
@@ -62,19 +61,20 @@
   padding: 1em;
 }
 
-.section h1 {
-  margin: 0;
-  float: left;
+.section-title {
+  width: 30vw;
+  text-align: center;
+  margin: 0 auto;
   font-size: 1.8em;
   color: #F4ACB7;
-  width: 20%;
 }
 
-.section .content {
-  float: right;
+.section-title i {
+  margin: 0 1em;
+}
+
+.section-content {
   color: #333;
-  width: 80%;
-  border-left: 0.3em solid #F4ACB7;
   padding-left: 1em;
 }
 
@@ -88,4 +88,26 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+.note-container {
+  margin: 1em auto;
+  padding: 2em;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.1);
+  transition: ease 0.2s;
+}
+
+.note-container:hover {
+  transform: scale(1.01);
+}
+
+.note-header {
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }

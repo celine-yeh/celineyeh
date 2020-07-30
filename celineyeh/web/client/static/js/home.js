@@ -69,4 +69,15 @@ $(document).ready(function(){
     },
     "retina_detect": true
   })
+
+  let renderNote = function (title, content) {
+    return `
+      <div class="note-container">
+        <div class="note-header">${title}</div>
+        <div class="note-content">${content}</div>
+      </div>
+      `
+  }
+
+  $('#notes').html(renderNote('Test Title', 'First paragraph...<br>Second paragraph...'))
 })
